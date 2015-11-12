@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nombre:"
+            android:id="@+id/tvNom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNom"
+            android:layout_alignBottom="@+id/tvNom"
+            android:layout_toEndOf="@+id/tvNom" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Selecciones Provincia"
+        android:id="@+id/tvProv"
+        android:layout_below="@+id/tvNom"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spProv"
+        android:layout_below="@+id/tvProv"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Seleccione Localidad"
+        android:id="@+id/tvLoc"
+        android:layout_below="@+id/spProv"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spLoc"
+        android:layout_below="@+id/tvLoc"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="¿Quieres enviar una notificación?"
+            android:id="@+id/tvEnvNot"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbNot"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tvEnvNot"
+            android:layout_marginLeft="20dp"
+            android:textOn="Sí"
+            android:textOff="No"
+             />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTINUAR"
+        android:id="@+id/button"
+        android:layout_below="@+id/tbNot"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+</LinearLayout>
